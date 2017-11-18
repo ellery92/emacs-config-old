@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util" package nil nil [1215 1233])
+            ("java.util.function.Consumer" include nil nil [1235 1270])
+            ("java.util.function.Predicate" include nil nil [1271 1307])
+            ("java.util.function.UnaryOperator" include nil nil [1308 1348]))          
+      :file "ArrayList.java"
+      :pointmax 60109
+      :fsize 60108
+      :lastmodtime '(23015 3764 0 0)
+      :unmatched-syntax '((BRACE_BLOCK 5390 . 60108) (IDENTIFIER 5377 . 5389) (DOT 5376 . 5377) (IDENTIFIER 5374 . 5376) (DOT 5373 . 5374) (IDENTIFIER 5369 . 5373) (COMMA 5367 . 5368) (IDENTIFIER 5358 . 5367) (COMMA 5356 . 5357) (IDENTIFIER 5344 . 5356) (COMMA 5342 . 5343) (GT 5341 . 5342) (IDENTIFIER 5340 . 5341) (LT 5339 . 5340) (IDENTIFIER 5335 . 5339) (IMPLEMENTS 5324 . 5334) (GT 5314 . 5315) (IDENTIFIER 5313 . 5314) (LT 5312 . 5313) (IDENTIFIER 5300 . 5312) (EXTENDS 5292 . 5299) (GT 5290 . 5291) (IDENTIFIER 5289 . 5290) (PUBLIC 5266 . 5272) (LT 5288 . 5289))))
+  :file "!root!workspace!project!jdk9!jdk!src!java.base!share!classes!java!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
