@@ -52,7 +52,7 @@
 (setq
  ;; persistent bookmarks
  bookmark-save-flag                      t
- bookmark-default-file              (concat temp-dir "/bookmarks"))
+ bookmark-default-file              "~/workspace/document/bookmarks")
 
 ;; Backups enabled, use nil to disable
 (setq

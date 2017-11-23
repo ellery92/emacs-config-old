@@ -1,0 +1,11 @@
+elpa/
+*~
+abbrev_defs
+private
+ede-projects.el
+.emacs.desktop
+projectile-bookmarks.eld
+projectile.cache
+semanticdb
+snippets
+srecode-map.el
