@@ -9,3 +9,5 @@ projectile.cache
 semanticdb
 snippets
 srecode-map.el
+.custom.el
+.emacs.desktop.lock
