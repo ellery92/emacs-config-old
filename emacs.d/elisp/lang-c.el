@@ -70,4 +70,13 @@
 (add-hook 'c-mode-hook 'alexott/cedet-hook)
 (add-hook 'c++-mode-hook 'alexott/cedet-hook)
 
+;; (use-package srefactor-lisp)
+
+(use-package srefactor
+  :config
+  (semantic-mode 1) ;; -> this is optional for Lisp
+  :bind
+  (:map c++-mode-map ("M-RET" . srefactor-refactor-at-point))
+  (:map c-mode-map ("M-RET" . srefactor-refactor-at-point)))
+
 (provide 'lang-c)

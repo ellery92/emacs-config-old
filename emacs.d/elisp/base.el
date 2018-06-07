@@ -48,6 +48,8 @@
       use-package-always-ensure          t
       gc-cons-threshold                  100000000)
 
+(load custom-file)
+
 ;; Bookmarks
 (setq
  ;; persistent bookmarks
@@ -104,9 +106,6 @@
 
  ;; Non-nil means display source file containing the main routine at startup
  gdb-show-main t)
-
-(custom-set-faces
- '(default ((t (:family "Inconsolata" :foundry "pfEd" :slant normal :weight normal :height 128 :width normal)))))
 
 (provide 'base)
 ;;; base ends here
