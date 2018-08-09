@@ -6,9 +6,6 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
 (defconst private-dir  (expand-file-name "private" user-emacs-directory))
 (defconst temp-dir (format "%s/cache" private-dir)
   "Hostname-based elisp temp directories")
@@ -106,6 +103,10 @@
 
  ;; Non-nil means display source file containing the main routine at startup
  gdb-show-main t)
+
+(add-to-list 'load-path (concat user-emacs-directory "elisp/use-package"))
+(add-to-list 'load-path (concat user-emacs-directory "elisp/misc"))
+(require 'use-package)
 
 (provide 'base)
 ;;; base ends here

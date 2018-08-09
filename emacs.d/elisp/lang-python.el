@@ -69,5 +69,14 @@
 (add-hook 'after-init-hook 'pyenv-init)
 (add-hook 'projectile-after-switch-project-hook 'pyenv-activate-current-project)
 
+;; kivy: kv file
+(use-package kivy-mode
+  :init
+  (add-to-list 'auto-mode-alist '("\\.kv$" . kivy-mode))
+  (add-hook 'kivy-mode-hook
+            '(lambda ()
+               (electric-indent-local-mode t))))
+
+
 (provide 'lang-python)
 ;;; base-python.el ends here

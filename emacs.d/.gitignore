@@ -11,3 +11,6 @@ snippets
 srecode-map.el
 .custom.el
 .emacs.desktop.lock
+GPATH
+GRTAGS
+GTAGS
