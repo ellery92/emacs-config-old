@@ -5,7 +5,7 @@
 
 (use-package company
   :config
-  (setq company-minimum-prefix-length 1)
+  (setq company-minimum-prefix-length 3)
   (add-hook 'after-init-hook 'global-company-mode))
 
 (use-package ediff
@@ -27,15 +27,6 @@
   ("C-=" . er/expand-region))
 
 (require 'setup-helm)
-
-(use-package hlinum
-  :config
-  (hlinum-activate))
-
-(use-package linum
-  :config
-  (setq linum-format " %3d ")
-  (global-linum-mode -1))
 
 (use-package magit
   :config

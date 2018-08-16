@@ -104,8 +104,6 @@
  ;; Non-nil means display source file containing the main routine at startup
  gdb-show-main t)
 
-(add-to-list 'load-path (concat user-emacs-directory "elisp/use-package"))
-(add-to-list 'load-path (concat user-emacs-directory "elisp/misc"))
 (require 'use-package)
 
 (provide 'base)

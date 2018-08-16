@@ -77,6 +77,7 @@
             '(lambda ()
                (electric-indent-local-mode t))))
 
+(setq elpy-shell-echo-output nil)
 
 (provide 'lang-python)
 ;;; base-python.el ends here

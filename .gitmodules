@@ -1,3 +1,66 @@
 [submodule "emacs.d/elisp/use-package"]
 	path = emacs.d/elisp/use-package
 	url = https://github.com/jwiegley/use-package.git
+[submodule "emacs.d/elisp/undo-tree"]
+	path = emacs.d/elisp/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
+[submodule "emacs.d/elisp/ace-jump-mode"]
+	path = emacs.d/elisp/ace-jump-mode
+	url = https://github.com/winterTTr/ace-jump-mode.git
+[submodule "emacs.d/elisp/company-mode"]
+	path = emacs.d/elisp/company-mode
+	url = https://github.com/company-mode/company-mode.git
+[submodule "emacs.d/elisp/exec-path-from-shell"]
+	path = emacs.d/elisp/exec-path-from-shell
+	url = https://github.com/purcell/exec-path-from-shell.git
+[submodule "emacs.d/elisp/helm"]
+	path = emacs.d/elisp/helm
+	url = https://github.com/emacs-helm/helm.git
+[submodule "emacs.d/elisp/helm-swoop"]
+	path = emacs.d/elisp/helm-swoop
+	url = https://github.com/ShingoFukuyama/helm-swoop.git
+[submodule "emacs.d/elisp/helm-projectile"]
+	path = emacs.d/elisp/helm-projectile
+	url = https://github.com/bbatsov/helm-projectile.git
+[submodule "emacs.d/elisp/magit"]
+	path = emacs.d/elisp/magit
+	url = https://github.com/magit/magit.git
+[submodule "emacs.d/elisp/magit-popup"]
+	path = emacs.d/elisp/magit-popup
+	url = https://github.com/magit/magit-popup.git
+[submodule "emacs.d/elisp/org-projectile"]
+	path = emacs.d/elisp/org-projectile
+	url = https://github.com/IvanMalison/org-projectile.git
+[submodule "emacs.d/elisp/org-bullets"]
+	path = emacs.d/elisp/org-bullets
+	url = https://github.com/sabof/org-bullets.git
+[submodule "emacs.d/elisp/emacs-neotree"]
+	path = emacs.d/elisp/emacs-neotree
+	url = https://github.com/jaypei/emacs-neotree.git
+[submodule "emacs.d/elisp/multiple-cursors.el"]
+	path = emacs.d/elisp/multiple-cursors.el
+	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "emacs.d/elisp/page-break-lines"]
+	path = emacs.d/elisp/page-break-lines
+	url = https://github.com/purcell/page-break-lines.git
+[submodule "emacs.d/elisp/projectile"]
+	path = emacs.d/elisp/projectile
+	url = https://github.com/bbatsov/projectile.git
+[submodule "emacs.d/elisp/smartparens"]
+	path = emacs.d/elisp/smartparens
+	url = https://github.com/Fuco1/smartparens.git
+[submodule "emacs.d/elisp/smex"]
+	path = emacs.d/elisp/smex
+	url = https://github.com/nonsequitur/smex.git
+[submodule "emacs.d/elisp/emacs-which-key"]
+	path = emacs.d/elisp/emacs-which-key
+	url = https://github.com/justbur/emacs-which-key.git
+[submodule "emacs.d/elisp/Emacs-wgrep"]
+	path = emacs.d/elisp/Emacs-wgrep
+	url = https://github.com/mhayashi1120/Emacs-wgrep.git
+[submodule "emacs.d/elisp/yasnippet"]
+	path = emacs.d/elisp/yasnippet
+	url = https://github.com/joaotavora/yasnippet.git
+[submodule "emacs.d/elisp/zygospore.el"]
+	path = emacs.d/elisp/zygospore.el
+	url = https://github.com/LouisKottmann/zygospore.el.git
