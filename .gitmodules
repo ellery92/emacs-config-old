@@ -62,5 +62,83 @@
 	path = emacs.d/elisp/yasnippet
 	url = https://github.com/joaotavora/yasnippet.git
 [submodule "emacs.d/elisp/zygospore.el"]
-	path = emacs.d/elisp/zygospore.el
+	path = emacs.d/elisp/zygospore
 	url = https://github.com/LouisKottmann/zygospore.el.git
+[submodule "emacs.d/elisp/clean-aindent-mode"]
+	path = emacs.d/elisp/clean-aindent-mode
+	url = https://github.com/pmarinov/clean-aindent-mode.git
+[submodule "emacs.d/elisp/dtrt-indent"]
+	path = emacs.d/elisp/dtrt-indent
+	url = https://github.com/jscheid/dtrt-indent.git
+[submodule "emacs.d/elisp/ws-butler"]
+	path = emacs.d/elisp/ws-butler
+	url = https://github.com/lewang/ws-butler.git
+[submodule "emacs.d/elisp/comment-dwim-2"]
+	path = emacs.d/elisp/comment-dwim-2
+	url = https://github.com/remyferre/comment-dwim-2.git
+[submodule "emacs.d/elisp/emacs-anzu"]
+	path = emacs.d/elisp/emacs-anzu
+	url = https://github.com/syohex/emacs-anzu.git
+[submodule "emacs.d/elisp/iedit"]
+	path = emacs.d/elisp/iedit
+	url = https://github.com/victorhge/iedit.git
+[submodule "emacs.d/elisp/prelude"]
+	path = emacs.d/elisp/prelude
+	url = https://github.com/bbatsov/prelude.git
+[submodule "emacs.d/elisp/pdf-tools"]
+	path = emacs.d/elisp/pdf-tools
+	url = https://github.com/politza/pdf-tools.git
+[submodule "emacs.d/elisp/flycheck"]
+	path = emacs.d/elisp/flycheck
+	url = https://github.com/flycheck/flycheck.git
+[submodule "emacs.d/elisp/ac-php"]
+	path = emacs.d/elisp/ac-php
+	url = https://github.com/xcwen/ac-php.git
+[submodule "emacs.d/elisp/alchemist.el"]
+	path = emacs.d/elisp/alchemist
+	url = https://github.com/tonini/alchemist.el.git
+[submodule "emacs.d/elisp/anaconda-mode"]
+	path = emacs.d/elisp/anaconda-mode
+	url = https://github.com/proofit404/anaconda-mode.git
+[submodule "emacs.d/elisp/emacs-async"]
+	path = emacs.d/elisp/emacs-async
+	url = https://github.com/jwiegley/emacs-async.git
+[submodule "emacs.d/elisp/auto-complete"]
+	path = emacs.d/elisp/auto-complete
+	url = https://github.com/auto-complete/auto-complete.git
+[submodule "emacs.d/elisp/emacs-cmake-project"]
+	path = emacs.d/elisp/emacs-cmake-project
+	url = https://github.com/alamaison/emacs-cmake-project.git
+[submodule "emacs.d/elisp/cmake-ide"]
+	path = emacs.d/elisp/cmake-ide
+	url = https://github.com/atilaneves/cmake-ide.git
+[submodule "emacs.d/elisp/company-c-headers"]
+	path = emacs.d/elisp/company-c-headers
+	url = https://github.com/randomphrase/company-c-headers.git
+[submodule "emacs.d/elisp/company-tern"]
+	path = emacs.d/elisp/company-tern
+	url = https://github.com/proofit404/company-tern.git
+[submodule "emacs.d/elisp/dash.el"]
+	path = emacs.d/elisp/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "emacs.d/elisp/emacs-elixir"]
+	path = emacs.d/elisp/emacs-elixir
+	url = https://github.com/elixir-editors/emacs-elixir.git
+[submodule "emacs.d/elisp/zenburn-emacs"]
+	path = emacs.d/elisp/zenburn-emacs
+	url = https://github.com/bbatsov/zenburn-emacs.git
+[submodule "emacs.d/elisp/semantic-refactor"]
+	path = emacs.d/elisp/semantic-refactor
+	url = https://github.com/tuhdo/semantic-refactor.git
+[submodule "emacs.d/elisp/emacs-helm-gtags"]
+	path = emacs.d/elisp/emacs-helm-gtags
+	url = https://github.com/syohex/emacs-helm-gtags.git
+[submodule "emacs.d/elisp/pythonic"]
+	path = emacs.d/elisp/pythonic
+	url = https://github.com/proofit404/pythonic.git
+[submodule "emacs.d/elisp/f.el"]
+	path = emacs.d/elisp/fel
+	url = https://github.com/rejeep/f.el.git
+[submodule "alchemist"]
+	path = emacs.d/elisp/alchemist
+	url = ./emacs.d/elisp/alchemist/

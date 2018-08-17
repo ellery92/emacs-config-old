@@ -1,6 +1,4 @@
-(use-package zenburn-theme
-  :defer t
-  :init
-  (load-theme 'zenburn t))
+(require 'zenburn-theme)
+(load-theme 'zenburn t)
 
 (provide 'base-theme)

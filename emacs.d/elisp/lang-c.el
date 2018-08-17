@@ -1,50 +1,37 @@
 ;; C-IDE based on https://github.com/tuhdo/emacs-c-ide-demo
-(use-package cc-mode
-  :config
-  ;; Available C style:
-  ;; "gnu": The default style for GNU projects
-  ;; "k&r": What Kernighan and Ritchie, the authors of C used in their book
-  ;; "bsd": What BSD developers use, aka "Allman style" after Eric Allman.
-  ;; "whitesmith": Popularized by the examples that came with Whitesmiths C, an early commercial C compiler.
-  ;; "stroustrup": What Stroustrup, the author of C++ used in his book
-  ;; "ellemtel": Popular C++ coding standards as defined by "Programming in C++, Rules and Recommendations," Erik Nyquist and Mats Henricson, Ellemtel
-  ;; "linux": What the Linux developers use for kernel development
-  ;; "python": What Python developers use for extension modules
-  ;; "java": The default style for java-mode (see below)
-  ;; "user": When you want to define your own style
-  (setq c-default-style "gnu") ;; set style to "linux"
-  (setq gdb-many-windows t ;; use gdb-many-windows by default
-	gdb-show-main t))
+;; Available C style:
+;; "gnu": The default style for GNU projects
+;; "k&r": What Kernighan and Ritchie, the authors of C used in their book
+;; "bsd": What BSD developers use, aka "Allman style" after Eric Allman.
+;; "whitesmith": Popularized by the examples that came with Whitesmiths C, an early commercial C compiler.
+;; "stroustrup": What Stroustrup, the author of C++ used in his book
+;; "ellemtel": Popular C++ coding standards as defined by "Programming in C++, Rules and Recommendations," Erik Nyquist and Mats Henricson, Ellemtel
+;; "linux": What the Linux developers use for kernel development
+;; "python": What Python developers use for extension modules
+;; "java": The default style for java-mode (see below)
+;; "user": When you want to define your own style
+(setq c-default-style "gnu") ;; set style to "linux"
+(setq gdb-many-windows t ;; use gdb-many-windows by default
+	  gdb-show-main t)
 
-(use-package semantic
-  :config
-  (global-semanticdb-minor-mode 1)
-  (global-semantic-idle-scheduler-mode 1)
-  (global-semantic-stickyfunc-mode 1)
-  (semantic-add-system-include "~/workspace/experiment/java/jdk/classes/" 'java-mode)
-  (semantic-add-system-include "/usr/include/c++/6.3.1/" 'c++-mode)
-  (semantic-mode 1))
+(require 'semantic)
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
+(global-semantic-stickyfunc-mode 1)
+(semantic-add-system-include "~/workspace/experiment/java/jdk/classes/" 'java-mode)
+(semantic-add-system-include "/usr/include/c++/6.3.1/" 'c++-mode)
+(semantic-mode 1)
 
-(use-package ede
-  :config
+(require 'ede)
   ;; Enable EDE only in C/C++
-  (global-ede-mode))
+  ;; (global-ede-mode)
 
-(require 'project-lst)
 (require 'setup-helm-gtags)
 
 ;; company-c-headers
-(use-package company-c-headers
-  :init
-  (add-to-list 'company-backends 'company-c-headers)
-  :config
-  (add-to-list 'company-c-headers-path-system "/usr/include/c++/6.3.1/"))
-
-(use-package cc-mode
-  ;; :init
-  ;; (define-key c-mode-map  [(tab)] 'company-complete)
-  ;; (define-key c++-mode-map  [(tab)] 'company-complete)
-  )
+(require 'company-c-headers)
+(add-to-list 'company-backends 'company-c-headers)
+(add-to-list 'company-c-headers-path-system "/usr/include/c++/6.3.1/")
 
 ;; git@github.com:syohex/emacs-counsel-gtags.git
 ;(use-package counsel-gtags
@@ -72,11 +59,8 @@
 
 ;; (use-package srefactor-lisp)
 
-(use-package srefactor
-  :config
-  (semantic-mode 1) ;; -> this is optional for Lisp
-  :bind
-  (:map c++-mode-map ("M-RET" . srefactor-refactor-at-point))
-  (:map c-mode-map ("M-RET" . srefactor-refactor-at-point)))
+(require 'srefactor)
+(define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
+(define-key c-mode-map (kbd "M-RET")  'srefactor-refactor-at-point)
 
 (provide 'lang-c)
