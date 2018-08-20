@@ -142,3 +142,6 @@
 [submodule "alchemist"]
 	path = emacs.d/elisp/alchemist
 	url = ./emacs.d/elisp/alchemist/
+[submodule "emacs.d/elisp/zygospore"]
+	path = emacs.d/elisp/zygospore
+	url = https://github.com/LouisKottmann/zygospore.el.git
