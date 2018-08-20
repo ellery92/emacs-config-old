@@ -145,3 +145,15 @@
 [submodule "emacs.d/elisp/zygospore"]
 	path = emacs.d/elisp/zygospore
 	url = https://github.com/LouisKottmann/zygospore.el.git
+[submodule "emacs.d/elisp/alchemist"]
+	path = emacs.d/elisp/alchemist
+	url = https://github.com/tonini/alchemist.el.git
+[submodule "emacs.d/elisp/dash"]
+	path = emacs.d/elisp/dash
+	url = https://github.com/magnars/dash.el.git
+[submodule "emacs.d/elisp/fel"]
+	path = emacs.d/elisp/fel
+	url = https://github.com/rejeep/f.el.git
+[submodule "emacs.d/elisp/multiple-cursors"]
+	path = emacs.d/elisp/multiple-cursors
+	url = https://github.com/magnars/multiple-cursors.el.git
