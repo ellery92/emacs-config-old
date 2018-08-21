@@ -157,3 +157,6 @@
 [submodule "emacs.d/elisp/multiple-cursors"]
 	path = emacs.d/elisp/multiple-cursors
 	url = https://github.com/magnars/multiple-cursors.el.git
+[submodule "emacs.d/elisp/julia-emacs"]
+	path = emacs.d/elisp/julia-emacs
+	url = https://github.com/JuliaEditorSupport/julia-emacs.git

@@ -20,6 +20,7 @@
 
 (require 'lang-python)
 
+(require 'lang-julia)
 ;; (require 'lang-ruby)
 
 ;; (require 'lang-go)
