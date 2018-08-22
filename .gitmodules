@@ -160,3 +160,12 @@
 [submodule "emacs.d/elisp/julia-emacs"]
 	path = emacs.d/elisp/julia-emacs
 	url = https://github.com/JuliaEditorSupport/julia-emacs.git
+[submodule "emacs.d/elisp/expand-region"]
+	path = emacs.d/elisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+[submodule "emacs.d/elisp/with-editor"]
+	path = emacs.d/elisp/with-editor
+	url = https://github.com/magit/with-editor.git
+[submodule "emacs.d/elisp/ghub"]
+	path = emacs.d/elisp/ghub
+	url = https://github.com/magit/ghub.git
