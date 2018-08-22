@@ -116,12 +116,19 @@
 (column-number-mode 1)
 
 (require 'flycheck)
-(global-flycheck-mode)
-
-(require 'pdf-tools)
-;; :init (pdf-tools-install)
-(add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
+;; (global-flycheck-mode)
 
 (require 'setup-editing)
+
+(require 'sr-speedbar)
+
+(require 'google-this)
+(google-this-mode 1)
+
+(require 'pdf-tools)
+(require 'pdf-occur)
+(require 'pdf-outline)
+(pdf-tools-install)
+(add-to-list 'auto-mode-alist '("\\.pdf\\'" . pdf-view-mode))
 
 (provide 'base-extensions)

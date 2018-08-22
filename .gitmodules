@@ -169,3 +169,6 @@
 [submodule "emacs.d/elisp/ghub"]
 	path = emacs.d/elisp/ghub
 	url = https://github.com/magit/ghub.git
+[submodule "emacs.d/elisp/tablist"]
+	path = emacs.d/elisp/tablist
+	url = https://github.com/politza/tablist.git

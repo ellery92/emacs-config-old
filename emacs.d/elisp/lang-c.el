@@ -18,8 +18,6 @@
 (global-semanticdb-minor-mode 1)
 (global-semantic-idle-scheduler-mode 1)
 (global-semantic-stickyfunc-mode 1)
-(semantic-add-system-include "~/workspace/experiment/java/jdk/classes/" 'java-mode)
-(semantic-add-system-include "/usr/include/c++/6.3.1/" 'c++-mode)
 (semantic-mode 1)
 
 (require 'ede)
@@ -31,21 +29,6 @@
 ;; company-c-headers
 (require 'company-c-headers)
 (add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/6.3.1/")
-
-;; git@github.com:syohex/emacs-counsel-gtags.git
-;(use-package counsel-gtags
-;  :load-path "vendor/emacs-counsel-gtags/"
-;  :ensure nil
-;  :config
-;  (add-hook 'c-mode-hook 'counsel-gtags-mode)
-;  (add-hook 'c++-mode-hook counsel-gtags-mode)
-;
-;  (with-eval-after-load 'counsel-gtags
-;    (define-key counsel-gtags-mode-map (kbd "M-t") 'counsel-gtags-find-definition)
-;    ;(define-key counsel-gtags-mode-map (kbd "M-r") 'counsel-gtags-find-reference)
-;    ;(define-key counsel-gtags-mode-map (kbd "M-s") 'counsel-gtags-find-symbol)
-;    (define-key counsel-gtags-mode-map (kbd "M-,") 'counsel-gtags-pop-stack)))
 
 (defun alexott/cedet-hook ()
   (local-set-key (kbd "C-c C-j") 'semantic-ia-fast-jump)
@@ -56,8 +39,6 @@
 (add-hook 'c-mode-common-hook 'alexott/cedet-hook)
 (add-hook 'c-mode-hook 'alexott/cedet-hook)
 (add-hook 'c++-mode-hook 'alexott/cedet-hook)
-
-;; (use-package srefactor-lisp)
 
 (require 'srefactor)
 (define-key c++-mode-map (kbd "M-RET") 'srefactor-refactor-at-point)
